@@ -37,17 +37,17 @@
   
   .containerPlayers {
     display: flex;
-    justify-content: space-between; /* Posiciona os jogadores nos extremos */
+    justify-content: space-between; 
     align-items: center;
     width: 100%;
-    max-width: 800px; /* Alargado para criar espaço */
+    max-width: 800px; 
     gap: 1rem;
   }
   
   #player1 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha à esquerda */
+    align-items: flex-start;
     gap: 0.5rem;
     text-align: left;
   }
@@ -55,14 +55,14 @@
   #player2 {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Alinha à direita */
+    align-items: flex-end;
     gap: 0.5rem;
     text-align: right;
   }
   
   input,
   label {
-    font-size: 1.5rem; /* Tamanho médio para maior visibilidade */
+    font-size: 1.5rem; 
     color: var(--font-color);
   }
   
