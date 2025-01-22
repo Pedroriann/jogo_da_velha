@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: #000000;
+  --border-color: #c81a1a;
+  --font-color: #0a0000;
+  --primary-color: #092ba7;
+  --btn-hover-color: #72e81d;
+  --btn-bg-hover: #092ba7;
+}
+  body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: Arial, sans-serif;
+    font-size: x-large;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: var(--font-color);
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .containerPlayers {
+    display: flex;
+    justify-content: space-between; /* Posiciona os jogadores nos extremos */
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Alargado para criar espaço */
+    gap: 1rem;
+  }
+  
+  #player1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha à esquerda */
+    gap: 0.5rem;
+    text-align: left;
+  }
+  
+  #player2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinha à direita */
+    gap: 0.5rem;
+    text-align: right;
+  }
+  
+  input,
+  label {
+    font-size: 1.5rem; /* Tamanho médio para maior visibilidade */
+    color: var(--font-color);
+  }
+  
+  #actualPlayer {
+    list-style: none;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #c81a1a;
+  }
+  
+  #reset {
+    margin: 1rem;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    background-color: var(--btn-hover-color);
+    color: var(--bg-color);
+    border: 2px solid var(--font-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  #reset:hover {
+    background-color: var(--btn-bg-hover);
+    color: var(--font-color);
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 2rem;
+  }
+  
+  #ticTacToeBackground {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #grid {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  button.BtnTic {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    background: var(--bg-color);
+    color: var(--font-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s ease;
+  }
+  
+  button.BtnTic:hover {
+    background-color: var(--btn-hover-color);
+    color: var(--bg-color);
+    transform: scale(1.1);
+  }
+  
+  button.BtnTic:disabled {
+    background-color: var(--primary-color);
+    color: var(--btn-hover-color);
+    cursor: not-allowed;
+  }
+  

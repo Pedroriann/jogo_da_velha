@@ -1,0 +1,56 @@
+<!-- Construa um jogo tic-tac-toe, conhecido em português como jogo da velha, utilizando HTML, CSS e Javascript. 
+Você pode desenvolver com liberdade, da forma que preferir, mas o jogo precisa atender aos seguintes requisitos:
+- Deve ser possível incluir os nomes dos dois jogadores;
+- O nome do jogador da vez deve ser mostrado na tela e alterado a medida que os turnos vão se alternando;
+- Um tabuleiro deve ser mostrado na tela e ser atualizado quando o jogador clicar na região que ele quer marcar;
+- Quando um jogador clicar no tabuleiro deve ser marcado um “X” ou “O” de acordo com o jogador da vez e não deve ser possível
+ clicar naquela região novamente;
+- Quando um jogador ganhar seu nome deve ser mostrado na tela e as regiões da vitória devem ser destacadas de alguma forma;
+- Em caso de empate, uma mensagem de empate deve ser mostrada na tela;
+- Deve ser possível reiniciar o jogo para jogar novamente. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="index.js" defer></script>
+    <title>Jogo da velha</title>
+  </head>
+  <body>
+    <header data-name="player1">
+      <button id="reset">Resetar</button>
+      <div class="containerPlayers">
+        <div id="player1">
+          <input type="text" id="nameOfPlayer1" />
+          <label for="nameOfPlayer1">Digite o nome do primeiro jogador</label>
+        </div>
+        <div id="player2">
+          <input type="text" id="nameOfPlayer2" />
+          <label for="nameOfPlayer2">Digite o nome do segundo jogador</label>
+        </div>
+      </div>
+      <ul id="actualPlayer"></ul>
+    </header>
+
+    <main data-name="player1">
+      <section id="ticTacToeBackground">
+        <div id="grid">
+          <button id="TicTacToeBtn" class="BtnTic" data-value="X"></button>
+          <button id="TicTacToeBtn" class="BtnTic" data-value="X"></button>
+          <button id="TicTacToeBtn" class="BtnTic" data-value="X"></button>
+        </div>
+        <div id="grid">
+          <button id="TicTacToeBtn" class="BtnTic" data-value="X"></button>
+          <button id="TicTacToeBtn" class="BtnTic" data-value="X"></button>
+          <button id="TicTacToeBtn" class="BtnTic" data-value="X"></button>
+        </div>
+        <div id="grid">
+          <button id="TicTacToeBtn" class="BtnTic" data-value="X"></button>
+          <button id="TicTacToeBtn" class="BtnTic" data-value="X"></button>
+          <button id="TicTacToeBtn" class="BtnTic" data-value="X"></button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
